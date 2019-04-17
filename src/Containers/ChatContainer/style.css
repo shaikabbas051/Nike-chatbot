@@ -1,85 +1,102 @@
-#chatContainer{
-    margin: auto;
-    border: 1px solid rgb(226, 226, 226);
-    background-color: rgba(255, 255, 255, 0);
-    overflow: none;
-    position: relative;
-    height: 100vh;
-    
+#chatContainer {
+  margin: auto;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: rgba(255, 255, 255, 0);
+  overflow: none;
+  position: relative;
+  height: 100vh;
 }
-#chatContainer .header{
-    height: 7vh;
-    background-color: aquamarine
+#chatContainer .header {
+  height: 7vh;
+  background-color: #3f51b5;
+  text-align: center;
+}
+#chatContainer .header p {
+  line-height: 2.1;
+  font-size: 22px;
+  color: white;
 }
 
-#chatContainer .chatMessages{
-    list-style-type: none;
-    height: 85vh;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    overflow: none;
-    padding:0px 10px;
+#chatContainer .chatMessages {
+  list-style-type: none;
+  height: 87vh;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  overflow: none;
+  padding: 0px 10px;
 }
-.bottomContainer{
-    height: 8vh;
+.bottomContainer {
+  height: 6vh;
+  padding: 0px 0px;
 }
-.bottomContainer .voiceRecorder{
-    display: inline-block;
+.bottomContainer .voiceRecorder {
+  display: inline-block;
+  width: 10% !important;
 }
-.bottomContainer .voiceRecorder input{
-    display: none;
+.bottomContainer .voiceRecorder input {
+  display: none;
 }
-.bottomContainer .showinput{
-    display: inline-block;
-    width: 200px
+.bottomContainer .showinput {
+  display: inline-block;
+  width: 80% !important;
+  height: 30px;
 }
-.bottomContainer .sendbutton{
-    display: inline-block;
+.bottomContainer .sendbutton {
+  display: inline-block;
+  width: 10% !important;
+  /* bottom: 4px; */
+  padding: 0px;
 }
-.styleuser,.stylebot{
-    border-radius: 5px;
-    max-width: 50%;
-    display: inline;
-    font-size:20px;
-    font-family: 'Francois One', sans-serif;
-    color: black;    
-    font-size: 14px;
-    padding: 5px 10px;
+.styleuser,
+.stylebot {
+  border-radius: 5px;
+  max-width: 50%;
+  display: inline;
+  font-size: 20px;
+  font-family: "Francois One", sans-serif;
+  color: black;
+  font-size: 14px;
+  padding: 5px 10px;
 }
-.styleuser{
-    background-color: #E3FFCA;
-    float: right;
+.styleuser {
+  background-color: #e3ffca;
+  float: right;
 }
-.stylebot{
-    background-color: #E8E8E8;    
+.stylebot {
+  background-color: #e8e8e8;
 }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /* .headUser{
     width: 33px;
     float: right;
     } */
 .botPad {
-    position: relative;
-    width: 100%;
-    display: flow-root;
+  position: relative;
+  width: 100%;
+  display: flow-root;
 }
 .userPad {
-    position: relative;
-    width: 100%;
-    display: flow-root;
+  position: relative;
+  width: 100%;
+  display: flow-root;
 }
-            /*Media Query for Mobile*/
-@media only screen and  (max-width : 767px){ 
-    #chatContainer h2{
-        height: 12%;
-    }
-    #chatContainer #result {
-        list-style-type: none;
-        height: 73vh;
-        width: 100%;
-        position: relative;
-        bottom: 0;
-        overflow: none;
-    }
+/*Media Query for Mobile*/
+@media only screen and (max-width: 767px) {
+  #chatContainer h2 {
+    height: 12%;
+  }
+  #chatContainer #result {
+    list-style-type: none;
+    height: 73vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    overflow: none;
+  }
 }

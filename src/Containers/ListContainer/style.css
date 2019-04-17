@@ -3,7 +3,7 @@
     width: 100%;
   }
   .homeBody{
-    margin: 0px 15px;
+    margin: 0px 5px;
   }
   .myreacttable {
     margin: 20px 0px;
@@ -27,8 +27,9 @@
     width: 100% !important;
 
   }
-  .myreacttable div table tbody tr td,.myreacttable div table thead tr td{
+  .myreacttable div table tbody tr td,.myreacttable div table thead tr th{
       padding: 0px;
+      padding-left: 20px;
   }
   .myreacttable div table tbody tr,.myreacttable div table thead tr{
     width: 100% !important;
