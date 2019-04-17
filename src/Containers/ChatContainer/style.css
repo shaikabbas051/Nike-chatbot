@@ -1,0 +1,85 @@
+#chatContainer{
+    margin: auto;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgba(255, 255, 255, 0);
+    overflow: none;
+    position: relative;
+    height: 100vh;
+    
+}
+#chatContainer .header{
+    height: 7vh;
+    background-color: aquamarine
+}
+
+#chatContainer .chatMessages{
+    list-style-type: none;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    overflow: none;
+    padding:0px 10px;
+}
+.bottomContainer{
+    height: 8vh;
+}
+.bottomContainer .voiceRecorder{
+    display: inline-block;
+}
+.bottomContainer .voiceRecorder input{
+    display: none;
+}
+.bottomContainer .showinput{
+    display: inline-block;
+    width: 200px
+}
+.bottomContainer .sendbutton{
+    display: inline-block;
+}
+.styleuser,.stylebot{
+    border-radius: 5px;
+    max-width: 50%;
+    display: inline;
+    font-size:20px;
+    font-family: 'Francois One', sans-serif;
+    color: black;    
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.styleuser{
+    background-color: #E3FFCA;
+    float: right;
+}
+.stylebot{
+    background-color: #E8E8E8;    
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/* .headUser{
+    width: 33px;
+    float: right;
+    } */
+.botPad {
+    position: relative;
+    width: 100%;
+    display: flow-root;
+}
+.userPad {
+    position: relative;
+    width: 100%;
+    display: flow-root;
+}
+            /*Media Query for Mobile*/
+@media only screen and  (max-width : 767px){ 
+    #chatContainer h2{
+        height: 12%;
+    }
+    #chatContainer #result {
+        list-style-type: none;
+        height: 73vh;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        overflow: none;
+    }
+}

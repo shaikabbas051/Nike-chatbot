@@ -1,0 +1,38 @@
+.homeContainer {
+    height: 100%;
+    width: 100%;
+  }
+  .homeBody{
+    margin: 0px 15px;
+  }
+  .myreacttable {
+    margin: 20px 0px;
+  }
+  .letsscroll div:first-child{
+    overflow-x: scroll;
+  }
+  .submitButton{
+    margin-left: 15px !important;
+  }
+  
+  .rowtitle{
+    font-weight: bold;
+    font-size: 17px
+  }
+  .tabletitle{
+    font-weight: bold !important;
+    font-size: 19px !important;
+  }
+  .myreacttable div table{
+    width: 100% !important;
+
+  }
+  .myreacttable div table tbody tr td,.myreacttable div table thead tr td{
+      padding: 0px;
+  }
+  .myreacttable div table tbody tr,.myreacttable div table thead tr{
+    width: 100% !important;
+}
+.myreacttable div table tbody tr td,.myreacttable div table thead tr td{
+    width: 33% !important;
+}
